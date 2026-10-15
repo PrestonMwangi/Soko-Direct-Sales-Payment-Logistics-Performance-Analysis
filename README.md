@@ -26,8 +26,7 @@ Soko Direct is a three-year-old Kenyan e-commerce retailer selling Electronics, 
 
 ## 4. Tools
 - Python (pandas, numpy, matplotlib) for cleaning, statistics and charts. 
-- PostgreSQL for deeper analysis; growth by category and payment method, orders per region per year, repeat customers, and discount bands. 
-- Power BI for the dashboard **[In Progress]**.
+- PostgreSQL for deeper analysis; growth by category and payment method, orders per region per year, repeat customers, and discount bands. .
 
 ## 5. Methodology
 
@@ -164,12 +163,8 @@ Soko Ecommerce Analysis/
 ## 11. How to Reproduce
 1. Run the notebook from top to bottom (Restart, then Run All). It reads the raw file and writes the clean file.
 2. Create the `orders` table in PostgreSQL, load the clean CSV, and run `soko_analysis.sql`.
-3. Open the Power BI file, which reads the clean CSV **[In Progress]**.
-
-## 12. Dashboard
-**[will add screenshot and a one-line description of each of the 2 pages will be created.]**
 
 ## 13. Author
 **[Preston Mwangi]**
 
-Data Analytics | Python | SQL | Power BI | Business Intelligence | 
+Data Analytics | Python | SQL | Business Intelligence | 
