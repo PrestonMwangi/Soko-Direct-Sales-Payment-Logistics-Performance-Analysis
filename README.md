@@ -87,6 +87,8 @@ About 15 rows had a value recalculated or corrected.
 - **Electronics** is 27% of orders but 74% of net revenue (KES 147.1M). Groceries is 12% of orders and 1.6% of revenue.
 - **M-Pesa** is 61% of orders and 61% of net revenue, followed by Cash on Delivery (16%), Card (13%) and Airtel Money (10%).
 - Monthly revenue stays between KES 6M and 10M. 2024 is above 2023 in 6 of 12 months, and no repeating seasonal pattern is visible in two years.
+- 
+![Net Revenue by Region (2023 vs 2024)](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Net%20Revenue%20by%20Region%20(2023%20vs%202024).png)
 
 ### Q2: Delivery and satisfaction
 - Average delivery is **4.0 days in Nairobi**, 6.0 in Coast, and **6.9 to 7.1 days in the other five regions**.
