@@ -48,6 +48,9 @@ Cleaning was done in code on a copy of the data. Every decision is recorded in t
 
 About 15 rows had a value recalculated or corrected.
 
+<img width="1469" height="667" alt="image" src="https://github.com/user-attachments/assets/368c0b87-d176-4a6a-be4f-04743e06cf24" />
+
+
 ### 5.2 Feature engineering
 `year`, `month` and `quarter` from order_date, and `is_cancelled_or_returned`, `is_cancelled` and `is_returned` from order_status. These exist only in the analysis notebook, not in the clean CSV.
 
@@ -89,6 +92,7 @@ About 15 rows had a value recalculated or corrected.
 - Monthly revenue stays between KES 6M and 10M. 2024 is above 2023 in 6 of 12 months, and no repeating seasonal pattern is visible in two years.
 - 
 ![Net Revenue by Region (2023 vs 2024)](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Net%20Revenue%20by%20Region%20(2023%20vs%202024).png)
+![Net revenue by Category](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Product%20Category%20vs%20Revenue.png)
 
 ### Q2: Delivery and satisfaction
 - Average delivery is **4.0 days in Nairobi**, 6.0 in Coast, and **6.9 to 7.1 days in the other five regions**.
@@ -97,12 +101,17 @@ About 15 rows had a value recalculated or corrected.
 - This supports leadership's hypothesis as an **association**. Delivery time explains only part of the variation in ratings.
 - Repeat purchases by region: 31.0% of Nairobi customers ordered more than once, against Rift Valley 15.8%, Coast 14.9%, Central 10.7%, Nyanza 10.0%, Eastern 6.5% and Western 5.8%. Nairobi, with the fastest delivery, has by far the highest repeat rate. Among the five regions with about 7-day delivery, repeat rates still range from 5.8% to 15.8%, so delivery time alone doesn't explain repeat buying. Customers are counted within each region, so regional customer counts overlap.
 
+![Average Rating by Delivery Days](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Average%20Rating%20by%20Delivery%20Days.png)
+![Average Delivery Days by Region](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Average%20Delivery%20Days%20by%20Region.png)
+
 ### Q3: Cancellations and returns
 - Cancellations outnumber returns for every payment method (about 60% of lost orders).
 - Lost-order rates range from 10.4% (Rift Valley) to 13.3% (Nairobi, Coast) by region, and from 11.8% (Home & Living) to 13.8% (Groceries) by category. These gaps are small.
 - Repeat purchases by region: 31.0% of Nairobi customers ordered more than once, against Rift Valley 15.8%, Coast 14.9%, Central 10.7%, Nyanza 10.0%, Eastern 6.5% and Western 5.8%. Nairobi, with the fastest delivery, has by far the highest repeat rate. Among the five regions with about 7-day delivery, repeat rates still range from 5.8% to 15.8%, so delivery time alone doesn't explain repeat buying. Customers are counted within each region, so regional customer counts overlap.
 - **Payment method shows the clearest difference:** Card 16.2% (117 of 724 orders), Airtel Money 13.0%, M-Pesa 11.9%, Cash on Delivery 11.1%. Card is higher on both cancellations (9.9%) and returns (6.2%). 
 - Western and Eastern have mid-range lost-order rates overall, so lost orders alone don't look like the explanation for their declines. Rates were not checked year by year.
+
+![Cancelled and Returned Share by Payment Method](https://github.com/PrestonMwangi/Soko-Direct-Sales-Payment-Logistics-Performance-Analysis/blob/main/images/Cancelled%20%26%20Returned%20Orders%20by%20Payment%20Method.png)
 
 ### SQL findings
 - Net revenue growth came from Home & Living (+15.7%) and from Card (+11.2%), while Electronics, Fashion, Cash on Delivery and Airtel Money declined.
